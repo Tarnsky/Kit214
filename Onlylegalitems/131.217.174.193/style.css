@@ -1,0 +1,260 @@
+.header-background{
+  background-image: url('img/Phatcat.jpg');
+  height: 400px;
+}
+
+.img-responsive{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.mask {
+  padding: 100px;
+  background-color: rgba(0, 0, 0, 0.6)
+}
+
+
+/* Body:
+Background color : #60a9ff
+All the contents and item should be aligned in center and displayed with flex.
+minimum height of the body is 100vh.
+*/
+
+.order {
+  background-color: rgb(211, 211, 216);
+  justify-content: center;
+	display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* with the class = "panel"
+Background color of the panel is white.
+Radious of the border is 10px.
+It has a paddings at 15px, 25px.
+Maximum width of panel is 960px.
+It will display with flex container.
+The direction of the flex is coloumn.
+Texts are algined in the center.
+All texts are displayed in uppercases
+*/
+
+.panel {
+  background-color: rgb(231, 225, 225);
+  border-radius: 10px;
+  padding: 15px 25px;
+  max-width: 1500x;
+  min-height: 450px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 10px 5px 5px rgb(0, 110, 255);
+  
+}
+
+
+/* with the class = "food-plan"
+It has a border at the bottom with 1 px, weightning, color: #e1f1ff
+*/
+
+.food-plan {
+  border-bottom: 1px solid #e1f1ff;
+  
+}
+
+/* the last elements under the class = "food-plan"
+It does not have any btb_orders
+*/
+
+.food-plan:last-child {
+  border-bottom: none;
+}
+
+/* the class = "food-img"
+it has a margin at the bottom : 25px.
+Maximum width size is 100%
+*/
+.food-img {
+  float: left;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.pricing-plan {
+  margin-left: 40px;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+/* the class = "food-header"
+it has a color:#888
+font is weighted at 600
+Letters have a space at 1px
+*/
+
+.food-header {
+  color: rgb(0, 110, 255);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+
+/* the class = "food-features"
+top margin is 50px
+right and lef margins are 0
+bottom margin is 25px
+background colour is #016ff9
+*/
+.food-features {
+  margin: 50px 0 25px;
+  color: #000000;
+}
+
+
+.search button{
+  background-color: #000000;
+  color: #f2f2f2;
+  float: right;
+  padding: 5px 10px;
+  margin-right: 16px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* the class = "food-features-item"
+font is weighted at 600
+font size is 12px.
+letter has a space at 1 px
+top and bottom paddings are 15px
+right and left paddings are 0
+it has a border at the top at 1px with color:  #e1f1ff
+*/
+
+.food-features-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-top: 1px solid #000000;
+}
+
+/* the last element of the class = "food-features-item"
+it has a bottom border at 1 px with color : #e1f1ff
+*/
+.food-features-item:last-child{
+  border-bottom: 1px solid #e1f1ff;
+}
+
+/* the class = "food-order"
+It has a color: #016ff9
+the font size is 32 px and weighted at 700
+it is displayed as block.
+*/
+.food-order {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.pricing-plan a {
+  background: rgb(255, 255, 255);
+}
+
+/* the class = "signup-button"
+It has a border at 1 px with the color : #9dd1ff
+The radius of the border is 10px.
+Button color is #348efe
+Top and bottom paddings are 15px.
+left and right paddings are 35px.
+Top and bottom margins are 25px.
+left and right margins are 0.
+it is displayed as inline-block.
+*/
+.pricing-plan a {
+  margin-top: 10px;
+}
+
+.order-button {
+  border: 1px solid #69b9ff;
+  border-radius: 10px;
+  color: #0073ff;
+  display: inline-block;
+  padding: 15px 35px;
+  text-decoration: none;
+  margin: 25px 0;
+}
+
+/* Advance: add media function
+When a user change the window size, panels are displayed as row.
+*/
+@media (min-width: 900px){
+  .panel {
+    flex-direction: row;
+  }
+  .food-plan {
+    border-bottom: none;
+    border-right: 1px solid #797979;
+    padding: 25px 50px;
+  }
+  .food-plan:last-child {
+    border-right: none;
+  }
+/*footer style
+*/
+  .footer{
+    padding:40px 0;
+    background-color: #797979;
+    color:#000000;
+  }
+  .footer ul{
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+  }
+  .footer li{
+    padding: 0 10px;
+  }
+  .footer ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+
+  .footer ul a:hover {
+    opacity:1;
+  }
+
+
+  /*.footer.social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  .footer.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #686767;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+
+  .footer.social > a:hover {
+    opacity:0.9;
+  }*/
+}
